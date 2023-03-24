@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+
+.red{ background-color: red;}
+.gray{ background-color: gray;}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.rel{ position: relative;}
+.abs{ position: absolute;}
+.zup{ z-index: 1000000;}
+.ofh{ overflow: hidden;}
+
+.d-block{ display: block !important;}
+.d-flex{ display: flex;}
+.justify-content-between{ justify-content: space-between;}
+.align-items-center{ align-items: center;}
+.d-none{ display: none;}
+.flex-column{ flex-direction: column;}
+
+.h100{ height: 100px;}
+.h350{ height: 350px;}
+.h200{ height: 200px;}
+
+.w100000{ width: 100000px;}
+.w800{ width: 800px;}
+.w200{ width: 200px;}
+.w-100{ width: 100%;}
+.left0{ left: 0;}
+.col-4{ width: 33.333%;}
+
+.w100000{ width: 100000px;}
+.w1200{ width: 1200px;}
+#swiper{
+    position: relative;
+}
+.swiper-slide {
+    opacity: 0;  
+    left:0; top:0;
+    transition: 0.5s;
+}  
+.swiper-slide.action {
+    opacity: 1;
+    z-index: 1;
+} 
+
+/* 탭처리 */
+.on h3{ background-color: black; color:white}
+.on ul{ display: flex !important;}
+
+#gnb > li > a{
+    font-size: 25px;
+    line-height: 1;
+    padding: 0 10px;
+}
+#gnb > li:hover > a{
+    color:red
+}
+
+#gnb ul{
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    top:100%;
+    left:0;
+    min-width:80px;
+    padding: 0 15px;
+    background-color: white;
+    z-index: 100;
+}
+/* #gnb li:hover ul{
+    height: 150px;
+} */
+#gnb:hover li ul{
+    height: 150px;
+}
+#gnb:after{
+    content: "";
+    display: block;
+    height: 0;
+    transition: 0.5s;
+    background-color: white;
+    position: absolute;
+    left:0; right:0; top:100%;
+    z-index: 10;
+}
+#gnb:hover:after{
+    height: 150px;
+}
+
+#popupnm{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
